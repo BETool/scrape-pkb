@@ -23,12 +23,10 @@ return Promise.resolve()
 
     db = connectedDb;
 
-    const LINK = 'http://pikabu.ru/story/_';
-    const counter = db.collection('counter');
-
     const query = { _id: 'id' };
     const update = { $inc: { counter: 1 } };
     const options = { upsert: true, returnOriginal: false };
+    const counter = db.collection('counter');
 
     return counter.findOneAndUpdate(query, update, options)
       .then((result) => {
