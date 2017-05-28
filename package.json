@@ -1,0 +1,17 @@
+{
+  "name": "scrape-pkb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Mikhail Garbuzov <madmxg@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "2.2.27",
+    "site-scraper": "1.0.2"
+  }
+}
